@@ -1,2 +1,2 @@
 # CodingProblems
-This repository will have different coding problems, from websites like hackerrank solved in different languages
+This is the repository where I try out different stuff.. This is mostly C++ but may have different languages as well.
