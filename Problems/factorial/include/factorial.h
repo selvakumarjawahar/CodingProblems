@@ -8,6 +8,6 @@
 
 #include<vector>
 
-std::vector<int> GenerateFactorial(int sequence_size);
+std::vector<int> GenerateFactorialSequence(int sequence_size);
 
 

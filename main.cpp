@@ -6,10 +6,11 @@
 using namespace std;
 
 
-int main(char argv[], int argc)
+int main(int argc,char* argv[])
 {
-    auto fact = GenerateFactorial(5);
+    auto fact = GenerateFactorialSequence(10);
     for(auto& elem : fact)
         std::cout << elem << ' ';
+	std::cout << '\n';
     return 0;
 }
