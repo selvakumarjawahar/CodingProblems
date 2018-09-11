@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 project(
     codingproblems
-    VERSION 1.0
+    VERSION 1.1
     LANGUAGES C CXX     
 )
 
@@ -13,7 +13,7 @@ add_executable(
 
 target_link_libraries(
     runproblem
-    PRIVATE factorial
+    PRIVATE factorial isunique
 )
 
 set_target_properties(

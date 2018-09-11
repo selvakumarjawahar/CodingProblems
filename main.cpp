@@ -1,16 +1,12 @@
 #include<iostream>
 
-#include"factorial.h"
-
+#include"isunique.h"
 
 using namespace std;
 
 
 int main(int argc,char* argv[])
 {
-    auto fact = GenerateFactorialSequence(10);
-    for(auto& elem : fact)
-        std::cout << elem << ' ';
-	std::cout << '\n';
-    return 0;
+	std::cout << isunique("abcdefghijklmnop") << '\n';
+	return 0;
 }
