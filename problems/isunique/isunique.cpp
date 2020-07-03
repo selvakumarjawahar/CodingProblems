@@ -1,6 +1,6 @@
-#include"isunique.h"
+#include "isunique.h"
 
-#include<vector>
+#include <vector>
 
 
 //#define naive
