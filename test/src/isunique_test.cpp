@@ -22,5 +22,5 @@ go_bandit([]() {
       AssertThat(false, Equals(isunique("qwertyqwerty")));
     });
 
-  });
+  },true);
 });

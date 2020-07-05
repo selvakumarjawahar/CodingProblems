@@ -1,6 +1,6 @@
 #include "factorial.h"
-static int GenerateFactorial(int num) {
-	int factorial = 1;
+size_t GenerateFactorial(int num) {
+	size_t factorial = 1;
 	for (int i = 1; i <= num; ++i)
 	{
 		factorial *= i;
