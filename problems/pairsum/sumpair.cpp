@@ -10,8 +10,8 @@ int sumpair::findSumPair(std::vector<int> sequence, int target_sum) {
   do{
     auto op = target_sum - *itr;
     if (op < 0 )return count;
-    auto f_itr = std::find(itr+1,sequence.end(),op);
-    if(f_itr != sequence.end()) count++;
+    auto cnt = std::count(itr+1,sequence.end(),op);
+    count += cnt;
   }while(++itr != sequence.end());
   return count;
 }

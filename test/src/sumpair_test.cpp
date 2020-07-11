@@ -19,12 +19,12 @@ using namespace bandit;
 go_bandit([]() {
   describe("test sumpair problem", []() {
     it("test with simple case", [&]() {
-      std::vector<int> inp{4,2,3,3,5,1,6,0};
+      std::vector<int> inp{1,5,3,3,3};
       auto count = sumpair::findSumPair(inp,6);
       AssertThat(count,Equals(4));
     });
 
   },
-      true);
+      false);
 
 });
