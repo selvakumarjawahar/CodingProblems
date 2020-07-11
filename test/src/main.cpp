@@ -1,5 +1,4 @@
 #include <bandit/bandit.h>
-#include <filesystem>
 
 using namespace snowhouse;
 using namespace bandit;

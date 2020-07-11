@@ -11,6 +11,7 @@
 #include <array>
 #include <bitset>
 #include <iostream>
+#include <vector>
 
 namespace moderate_problems {
 void inplaceSwap(int& a, int& b);
