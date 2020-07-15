@@ -26,6 +26,30 @@ go_bandit([]() {
                AssertThat(actual,Equals(expected));
              });
 
+             it("test linked list reversal", [&]() {
+               linkedlists::SingleLinkedList<int> list;
+               list.insert(42);
+               list.insert(10);
+               list.insert(100);
+               std::vector<int> expected{100,10,42};
+               list.reverse();
+               list.reverse();
+               auto actual = list.copyNodeData();
+               AssertThat(actual,Equals(expected));
+             });
+
+             it("test linked list loop detection", [&]() {
+               linkedlists::SingleLinkedList<int> list;
+               list.insert(42);
+               list.insert(10);
+               list.insert(100);
+               list.insert(11);
+               list.insert(120);
+               list.insert(150);
+               list.createLoop();
+               AssertThat(list.isLoop(),Equals(true));
+             });
+
            },
            false);
 

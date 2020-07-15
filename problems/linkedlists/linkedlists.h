@@ -6,7 +6,6 @@
 #define SOLUTIONS_LINKEDLISTS_H
 
 #include <vector>
-#include <iostream>
 
 namespace linkedlists {
 
@@ -45,26 +44,56 @@ public:
   int getSize(){
     return count;
   }
-  /*
+
   void reverse(){
-    auto *cur_ptr = headPtr;
-    auto *next_ptr = cur_ptr->nextNode;
-    cur_ptr->nextnode = nullptr;
-    while(cur_ptr != nullptr){
-      auto tptr = next_ptr->nextNode;
-      cur_ptr = next_ptr;
-      next_ptr = tptr;
-      cur_ptr->nextNode = nullptr;
-      tptr->nextNode =
+    Node<T> *prev = nullptr;
+    Node<T> *next = nullptr;
+    auto *current = headPtr;
+    while(current != nullptr){
+      next = current->nextNode;
+      current->nextNode = prev;
+      prev = current;
+      current = next;
     }
+    headPtr = prev;
   }
- */
+
+  bool isLoop(){
+    auto *slow_ptr = headPtr;
+    auto *fast_ptr = headPtr;
+    while(fast_ptr != nullptr && fast_ptr->nextNode != nullptr){
+      slow_ptr = slow_ptr->nextNode;
+      fast_ptr = fast_ptr->nextNode->nextNode;
+      if(slow_ptr == fast_ptr)return true;
+    }
+    return false;
+  }
+
+  void createLoop(){
+    auto *head = headPtr;
+    auto *lag_ptr = headPtr;
+    while(head != nullptr) {
+      lag_ptr = head;
+      head = head->nextNode;
+    }
+    lag_ptr->nextNode = headPtr;
+  }
+
   ~SingleLinkedList(){
+    /*
     while(headPtr != nullptr){
       auto *tptr = headPtr;
       headPtr = tptr->nextNode;
       delete tptr;
     }
+    */
+    for(int i = 0; i < count ; i++){
+      auto *tptr = headPtr;
+      headPtr = tptr->nextNode;
+      if(tptr)
+        delete tptr;
+    }
+
   }
 
 private:
