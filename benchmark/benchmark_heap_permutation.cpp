@@ -7,7 +7,7 @@
 
 #include <string>
 
-std::string inp{"1234567"};
+std::string inp{"123"};
 std::vector<std::string> outp;
 
 UBENCH(HEAPS_PERMUTATION,STRING_INPUT_8_CHARS){
