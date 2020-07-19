@@ -12,7 +12,7 @@ add_library( solutions STATIC
         problems/factorial/factorial.cpp
         problems/isunique/isunique.h
         problems/isunique/isunique.cpp
-        problems/permutations/permutationalgos.h problems/pairsum/sumpair.h problems/pairsum/sumpair.cpp problems/moderateproblems/moderateproblems.h problems/moderateproblems/moderateproblems.cpp problems/rotationalcipher/rotationalcipher.h problems/rotationalcipher/rotationalcipher.cpp problems/contiguosarrayelements/contiguoussubarray.h problems/contiguosarrayelements/contiguoussubarray.cpp problems/linkedlists/linkedlists.h)
+        problems/permutations/permutationalgos.h problems/pairsum/sumpair.h problems/pairsum/sumpair.cpp problems/moderateproblems/moderateproblems.h problems/moderateproblems/moderateproblems.cpp problems/rotationalcipher/rotationalcipher.h problems/rotationalcipher/rotationalcipher.cpp problems/contiguosarrayelements/contiguoussubarray.h problems/contiguosarrayelements/contiguoussubarray.cpp problems/linkedlists/linkedlists.h problems/leetfacebooklinkedlist/leetfblinkedlist.h problems/leetfacebooklinkedlist/leetfblinkedlist.cpp)
 
 set_target_properties(solutions
         PROPERTIES CXX_STANDARD 17
