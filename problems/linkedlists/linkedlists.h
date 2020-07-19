@@ -49,7 +49,7 @@ public:
     Node<T> *prev = nullptr;
     Node<T> *next = nullptr;
     auto *current = headPtr;
-    while(current != nullptr){
+    while(current != nullptr) {
       next = current->nextNode;
       current->nextNode = prev;
       prev = current;
