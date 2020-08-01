@@ -6,6 +6,7 @@
 #define SOLUTIONS_LEETFBARRAYS_H
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
 namespace leetfb_arrays {
 class Solution {
