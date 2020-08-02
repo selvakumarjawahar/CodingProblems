@@ -6,7 +6,7 @@ add_executable(runtests
         src/moderateproblems_test.cpp
         src/rotationalcipher_test.cpp
         src/contiguoussubarray_test.cpp
-        src/linkedlist_test.cpp src/leetfblinkedlist_tests.cpp src/leetfbarrays_test.cpp)
+        src/linkedlist_test.cpp src/leetfblinkedlist_tests.cpp src/leetfbarrays_test.cpp src/binarysearch_test.cpp)
 
 set_target_properties(runtests
         PROPERTIES CXX_STANDARD 17
