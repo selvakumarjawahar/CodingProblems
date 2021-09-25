@@ -1,26 +1,24 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.12)
 
-project(
-    codingproblems
-    VERSION 1.1
-    LANGUAGES C CXX     
-)
+set( CMAKE_VERBOSE_MAKEFILE off )
 
-add_executable(
-    runproblem
-    main.cpp
-)
+project(solutions
+        VERSION 0.1
+        LANGUAGES CXX C
+        )
 
-target_link_libraries(
-    runproblem
-    PRIVATE factorial isunique
-)
+add_library( solutions STATIC
+        problems/factorial/factorial.h
+        problems/factorial/factorial.cpp
+        problems/isunique/isunique.h
+        problems/isunique/isunique.cpp
+        problems/permutations/permutationalgos.h problems/pairsum/sumpair.h problems/pairsum/sumpair.cpp problems/moderateproblems/moderateproblems.h problems/moderateproblems/moderateproblems.cpp problems/rotationalcipher/rotationalcipher.h problems/rotationalcipher/rotationalcipher.cpp problems/contiguosarrayelements/contiguoussubarray.h problems/contiguosarrayelements/contiguoussubarray.cpp problems/linkedlists/linkedlists.h problems/leetfacebooklinkedlist/leetfblinkedlist.h problems/leetfacebooklinkedlist/leetfblinkedlist.cpp problems/leetfbarrays/leetfbarrays.h problems/leetfbarrays/leetfbarrays.cpp)
 
-set_target_properties(
-    runproblem
-    PROPERTIES CXX_STANDARD 11
-)
+set_target_properties(solutions
+        PROPERTIES CXX_STANDARD 17
+        CXX_STANDARD_REQUIRED ON
+        CXX_EXTENSIONS OFF
+        )
 
-add_subdirectory(
-    Problems
-)
+add_subdirectory(test)
+add_subdirectory(benchmark)
