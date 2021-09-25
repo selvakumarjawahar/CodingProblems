@@ -7,6 +7,7 @@
 #pragma once
 
 #include <vector>
+#include <cstddef>
 
 size_t GenerateFactorial(int num);
 std::vector<int> GenerateFactorialSequence(int sequence_size);
