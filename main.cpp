@@ -7,6 +7,6 @@ using namespace std;
 
 int main(int argc,char* argv[])
 {
-	std::cout << isunique("abcdefghijklmnopa") << '\n';
+	std::cout << isunique("abcdefghijklmnop") << '\n';
 	return 0;
 }
