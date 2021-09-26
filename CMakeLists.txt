@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.15)
 
 set( CMAKE_VERBOSE_MAKEFILE off )
 
@@ -12,10 +12,24 @@ add_library( solutions STATIC
         problems/factorial/factorial.cpp
         problems/isunique/isunique.h
         problems/isunique/isunique.cpp
-        problems/permutations/permutationalgos.h problems/pairsum/sumpair.h problems/pairsum/sumpair.cpp problems/moderateproblems/moderateproblems.h problems/moderateproblems/moderateproblems.cpp problems/rotationalcipher/rotationalcipher.h problems/rotationalcipher/rotationalcipher.cpp problems/contiguosarrayelements/contiguoussubarray.h problems/contiguosarrayelements/contiguoussubarray.cpp problems/linkedlists/linkedlists.h problems/leetfacebooklinkedlist/leetfblinkedlist.h problems/leetfacebooklinkedlist/leetfblinkedlist.cpp problems/leetfbarrays/leetfbarrays.h problems/leetfbarrays/leetfbarrays.cpp)
+        problems/permutations/permutationalgos.h
+        problems/pairsum/sumpair.h
+        problems/pairsum/sumpair.cpp
+        problems/moderateproblems/moderateproblems.h
+        problems/moderateproblems/moderateproblems.cpp
+        problems/rotationalcipher/rotationalcipher.h
+        problems/rotationalcipher/rotationalcipher.cpp
+        problems/contiguosarrayelements/contiguoussubarray.h
+        problems/contiguosarrayelements/contiguoussubarray.cpp
+        problems/linkedlists/linkedlists.h
+        problems/leetfacebooklinkedlist/leetfblinkedlist.h
+        problems/leetfacebooklinkedlist/leetfblinkedlist.cpp
+        problems/leetfbarrays/leetfbarrays.h
+        problems/leetfbarrays/leetfbarrays.cpp
+        problems/sortingalgos/mergesort.h)
 
 set_target_properties(solutions
-        PROPERTIES CXX_STANDARD 17
+        PROPERTIES CXX_STANDARD 20
         CXX_STANDARD_REQUIRED ON
         CXX_EXTENSIONS OFF
         )

@@ -1,7 +1,10 @@
-add_executable(runbenchmark main.cpp benchmark_heap_permutation.cpp compare_stdlist_mylist.cpp)
+add_executable(runbenchmark
+        main.cpp
+        benchmark_heap_permutation.cpp
+        compare_stdlist_mylist.cpp)
 
 set_target_properties(runbenchmark
-        PROPERTIES CXX_STANDARD 17
+        PROPERTIES CXX_STANDARD 20
         CXX_STANDARD_REQUIRED ON
         CXX_EXTENSIONS OFF
         )
